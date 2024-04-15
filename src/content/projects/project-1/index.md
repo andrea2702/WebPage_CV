@@ -5,7 +5,7 @@ date: "May 22 2023"
 draft: false
 tags:
 - Python
-- YoloV5
+- Yolov5
 - Computer Vision
 demoUrl: https://www.youtube.com/watch?v=olWXXbzrLfk
 repoUrl: https://github.com/andrea2702/Quack_track?tab=readme-ov-file
