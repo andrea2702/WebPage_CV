@@ -7,6 +7,7 @@ tags:
 - Python
 - Yolov5
 - Computer Vision
+- OpenCv
 demoUrl: https://www.youtube.com/watch?v=olWXXbzrLfk
 repoUrl: https://github.com/andrea2702/Quack_track?tab=readme-ov-file
 ---

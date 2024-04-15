@@ -1,13 +1,13 @@
 ---
-title: "Xarm Cube Tracker"
-summary: "Move an Xarm by following the movement of a cube"
+title: "XArm Cube Tracker"
+summary: "Move an XArm by following the movement of a cube"
 date: "June 17 2023"
 draft: false
 tags:
 - Python
 - Computer Vision
 - ROS
-- OpenCV
+- OpenCv
 demoUrl : https://www.youtube.com/shorts/LTLvf79X1W8
 repoUrl : https://github.com/andrea2702/XArmCubeTracker
 ---
