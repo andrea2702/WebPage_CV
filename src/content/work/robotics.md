@@ -5,7 +5,7 @@ dateStart: "01/01/2024"
 dateEnd: "now"
 ---
 
-Computer Vision intern in the development 
+Computer Vision intern in the development of an object classification pipeline
 
-- Sit amet consectetur adipisicing elit. Iure illo neque tempora.
-- Quibusdam, debitis voluptatum, lorem ipsum
+- Perform object identification with different methods: Yolov, Faster-R-CNN, SAM and Grounding Dino
+- Use classical computer vision methods
