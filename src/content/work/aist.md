@@ -7,6 +7,6 @@ dateEnd: "12/19/2023"
 
 Help with the continuous investigation.
 
-- Learn about computer vision systems of recognition using OpenCV and YOLOV
-- Implementation of neuronal networks with Tensorflow 2.0
+- Learn about computer vision systems of object recognition using OpenCV and YOLOV
+- Implementation of neuronal networks with Tensorflow 2.0 for action recognition using LSTMs
 - Integrate systems using ROS

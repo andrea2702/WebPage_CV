@@ -7,5 +7,6 @@ dateEnd: "now"
 
 Computer Vision intern in the development of an object classification pipeline
 
-- Perform object identification with different methods: Yolov, Faster-R-CNN, SAM and Grounding Dino
-- Use classical computer vision methods
+- Develop an algorithm to detect objects in an image using different methos: Yolov5, Faster-R-CNN, SAM and GroudingDino. Evaluating the results of each method and selecting the best.
+- Filter the results of the previous detection using geometrical methods.
+- Desing an algoritm to sort the results and send them to the main pipeline.
