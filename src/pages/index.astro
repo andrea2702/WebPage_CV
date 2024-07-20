@@ -6,6 +6,7 @@ import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
+import Image from '@astrojs/image';
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
@@ -75,7 +76,7 @@ const stack = [
     
     <div class="animate absolute h-full w-full flex items-center justify-center">
       <div class="imagen-circular" style="width: 200px; height: 200px; overflow: hidden; border-radius: 50%;">
-        <img src="/src/pages/images/FB_IMG_1719413905668.png" alt="Descripción de la imagen" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="/images/FB_IMG_1719413905668.png" alt="Descripción de la imagen" style="width: 100%; height: 100%; object-fit: cover;">
      </div>
       </div>
       <div class='relative w-full h-full flex items-center justify-center'>
@@ -120,13 +121,13 @@ const stack = [
     
     <div class="flex space-x-4">
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/_IMG-20230810-WA0022.jpg" alt="Technical Training at AIST" class="w-full h-full object-cover">
+        <img src="/images/_IMG-20230810-WA0022.jpg" alt="Technical Training at AIST" class="w-full h-full object-cover">
       </div>
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/foto5.jpg" alt="Working with an XArm" class="w-full h-full object-cover">
+        <img src="/images/foto5.jpg" alt="Working with an XArm" class="w-full h-full object-cover">
       </div>
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/roborregos.jpg" alt="Roborregos @Home competition 2022" class="w-full h-full object-cover">
+        <img src="/images/roborregos.jpg" alt="Roborregos @Home competition 2022" class="w-full h-full object-cover">
       </div>
     </div>
   </div>
@@ -134,13 +135,13 @@ const stack = [
   <div class="flex justify-center mt-8">
     <div class="flex space-x-4">
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/20240610_175653.jpg" alt="Presentation of the autonomous navigation and manipulation robot" class="w-full h-full object-cover">
+        <img src="/images/20240610_175653.jpg" alt="Presentation of the autonomous navigation and manipulation robot" class="w-full h-full object-cover">
       </div>
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/20240626_173129.jpg" alt="LiFE Awards from Tecnologico de Monterrey" class="w-full h-full object-cover">
+        <img src="/images/20240626_173129.jpg" alt="LiFE Awards from Tecnologico de Monterrey" class="w-full h-full object-cover">
       </div>
       <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="src/pages/images/IMG-20240625-WA0190.jpg" alt="Gallagher Foundation Scholarship" class="w-full h-full object-cover">
+        <img src="/images/IMG-20240625-WA0190.jpg" alt="Gallagher Foundation Scholarship" class="w-full h-full object-cover">
       </div>
     </div>
   </div>
