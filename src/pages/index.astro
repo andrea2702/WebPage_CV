@@ -36,7 +36,7 @@ const stack = [
   },
 ]
 ---
-
+<link rel="stylesheet" href="/src/styles/global.css">
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
 
   <!-- Light Mode: Particles -->
@@ -117,37 +117,46 @@ const stack = [
           <p>Now</p>
           <p>I currently work as a Computer Vision Intern at Super Robotics, where I do design and development.</p>
         </article>
-    <div class="flex justify-center mt-8">
-    
-    <div class="flex space-x-4">
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/_IMG-20230810-WA0022.jpg" alt="Technical Training at AIST" class="w-full h-full object-cover">
+
+       <!-- Añade tu contenido de imágenes aquí -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="image-container">
+        <img src="/images/_IMG-20230810-WA0022.jpg" alt="Technical Training at AIST">
+        <div class="description">Technical Training at AIST</div>
       </div>
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/foto5.jpg" alt="Working with an XArm" class="w-full h-full object-cover">
+      <div class="image-container">
+        <img src="/images/foto5.jpg" alt="Working with an XArm">
+        <div class="description">Working with an XArm</div>
       </div>
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/roborregos.jpg" alt="Roborregos @Home competition 2022" class="w-full h-full object-cover">
+      <div class="image-container">
+        <img src="/images/roborregos.jpg" alt="Roborregos @Home competition 2022">
+        <div class="description">Roborregos @Home competition 2022</div>
       </div>
-    </div>
-  </div>
-        <!-- Primer fila de fotos -->
-  <div class="flex justify-center mt-8">
-    <div class="flex space-x-4">
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/20240610_175653.jpg" alt="Presentation of the autonomous navigation and manipulation robot" class="w-full h-full object-cover">
+      <div class="image-container">
+        <img src="/images/20240610_175653.jpg" alt="Presentation of the autonomous navigation and manipulation robot">
+        <div class="description">Presentation of the autonomous navigation and manipulation robot</div>
       </div>
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/20240626_173129.jpg" alt="LiFE Awards from Tecnologico de Monterrey" class="w-full h-full object-cover">
+      <div class="image-container">
+        <img src="/images/20240626_173129.jpg" alt="LiFE Awards from Tecnologico de Monterrey">
+        <div class="description">LiFE Awards from Tecnologico de Monterrey</div>
       </div>
-      <div class="w-300 h-300 overflow-hidden rounded-lg">
-        <img src="/images/IMG-20240625-WA0190.jpg" alt="Gallagher Foundation Scholarship" class="w-full h-full object-cover">
+      <div class="image-container">
+        <img src="/images/IMG-20240625-WA0190.jpg" alt="Gallagher Foundation Scholarship">
+        <div class="description">Gallagher Foundation Scholarship</div>
       </div>
     </div>
-  </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden">
+      <div class="relative">
+        <span id="closeModal" class="absolute top-0 right-0 text-white text-3xl cursor-pointer">&times;</span>
+        <img id="modalImage" src="" alt="" class="max-w-full max-h-full">
+      </div>
+    </div>
+
       </section>
 
-      <!-- Project Preview Section -->
+       <!-- Project Preview Section -->
       <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
@@ -169,6 +178,7 @@ const stack = [
           </ul>
         </div>
       </section>
+
 
       <!-- Contact Section -->
       <section class="animate">
@@ -200,4 +210,30 @@ const stack = [
       
     </div>
   </div>
+
+
+ <script>
+   document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.image-container img').forEach(img => {
+    img.addEventListener('click', () => {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      modalImg.src = img.src;
+      modal.classList.add('show');
+    });
+  });
+
+  document.getElementById('closeModal').addEventListener('click', () => {
+    document.getElementById('imageModal').classList.remove('show');
+  });
+
+  document.getElementById('imageModal').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('imageModal')) {
+      document.getElementById('imageModal').classList.remove('show');
+    }
+  });
+});
+
+  </script>
+
 </PageLayout>
