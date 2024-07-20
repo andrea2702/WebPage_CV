@@ -214,24 +214,28 @@ const stack = [
 
  <script>
    document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.image-container img').forEach(img => {
-    img.addEventListener('click', () => {
-      const modal = document.getElementById('imageModal');
-      const modalImg = document.getElementById('modalImage');
-      modalImg.src = img.src;
-      modal.classList.add('show');
+  const modal = document.getElementById('imageModal');
+  const closeModal = document.getElementById('closeModal');
+  const modalImage = document.getElementById('modalImage') as HTMLImageElement;
+
+  if (modal && modalImage && closeModal) {
+    document.querySelectorAll('.image-container img').forEach(img => {
+      img.addEventListener('click', () => {
+        modalImage.src = (img as HTMLImageElement).src;
+        modal.classList.add('show');
+      });
     });
-  });
 
-  document.getElementById('closeModal').addEventListener('click', () => {
-    document.getElementById('imageModal').classList.remove('show');
-  });
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('show');
+    });
 
-  document.getElementById('imageModal').addEventListener('click', (e) => {
-    if (e.target === document.getElementById('imageModal')) {
-      document.getElementById('imageModal').classList.remove('show');
-    }
-  });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+      }
+    });
+  }
 });
 
   </script>
