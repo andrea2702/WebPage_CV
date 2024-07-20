@@ -6,7 +6,7 @@ import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
-import Image from '@astrojs/image';
+
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
