@@ -2,7 +2,7 @@
 company: "Super Robotics"
 role: "Computer Vision Intern"
 dateStart: "01/01/2024"
-dateEnd: "now"
+dateEnd: "28/06/2024"
 ---
 
 Computer Vision intern in the development of an object classification pipeline
