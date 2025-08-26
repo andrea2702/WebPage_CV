@@ -2,7 +2,7 @@
 company: "Super Robotics"
 role: "Computer Vision Engineer"
 dateStart: "01/07/2024"
-dateEnd: "30/09/2024"
+dateEnd: "Actual"
 ---
 
 Computer Vision Engineer in the development of an object classification pipeline
